@@ -1,0 +1,8 @@
+smt = input('You can type whatever you like to: ')
+print(type(smt))
+print('Number: ',smt.isalnum())
+print('Alphabet: ',smt.isalpha())
+print('ASCII: ',smt.isascii())
+print('Has space: ',smt.isspace())
+print('Decimal: ',smt.isdecimal())
+print('Show in terminal: ',smt.isprintable())
