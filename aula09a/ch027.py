@@ -1,3 +1,3 @@
-name = str(input('Type a fullname: '))
+name = str(input('Type a fullname: ')).title().strip().split()
 
-print('The first name is: "{}". And the last name is: "{}".'.format(name.title().split()[0], name.title().split()[-1]))
+print('The first name is: "{}". And the last name is: "{}".'.format(name[0], name[-1]))
