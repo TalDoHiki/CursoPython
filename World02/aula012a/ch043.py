@@ -14,4 +14,6 @@ elif imc > 30 and imc <= 40:
 elif imc > 40:
     st = 'morbid obesity'
 
-print('IMC Status: {}'.format(st))
+print('''
+IMC Status: {}
+IMC Index: {:.1f}'''.format(st,imc))

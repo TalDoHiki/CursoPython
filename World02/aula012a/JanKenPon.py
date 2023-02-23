@@ -32,7 +32,15 @@ while gt == True:
     sleep(1)
     pl = str(input("{}shhh.. and you? What do you will pick (the house doesn't know..): {}".format(colors['grey'],colors['clear']))).lower().strip().split()[0]
     sleep(1)
-    print('{}The house chose {}{}'.format(colors['yellow'] ,hs ,colors['clear']))
+    print('JAN..')
+    sleep(1)
+    print('KEN..')
+    sleep(1)
+    print('PON!!!')
+    print('{}-=-{}'.format(colors['yellow'], colors['clear'])*10)
+    print('{}The house chose {}{}.'.format(colors['yellow'] ,hs ,colors['clear']))
+    print('{}The player chose {}{}.'.format(colors['yellow'], pl, colors['clear']))
+    print('{}-=-{}'.format(colors['yellow'], colors['clear'])*10)
     sleep(1)
     if hs == pl:
         print("{}Damn, you two has picked the same thing.. Let's do it again!{}".format(colors['yellow'],colors['clear']))

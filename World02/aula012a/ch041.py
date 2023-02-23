@@ -2,14 +2,23 @@ from datetime import date
 
 by = int(input('Type the year of birth: '))
 id = date.today().year - by
+cl = str
 
-if id > 20:
-    print('Master')
-elif id <= 20 and id > 19:
-    print('Senior')
-elif id <= 19 and id > 14:
-    print('Junior')
-elif id <= 14 and id >9:
-    print('Infantil')
-elif id <= 9:
-    print('Mirim')
+if id <= 9:
+    cl = 'Mirim'
+elif id <= 14:
+    cl = 'Infantil'
+elif id <= 19:
+    cl ='Junior'
+elif id <= 20:
+    cl = 'Senior'
+else:
+    cl = 'Master'
+
+
+
+
+print('''
+Date of Birth: {}
+Athlete Age: {}
+Rank: {}'''.format(by,id,cl))
