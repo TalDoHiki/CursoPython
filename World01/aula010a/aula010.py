@@ -1,5 +1,3 @@
-
-
 ch = int(input('Do you wanna try (name[1]) or (grade[2])? '))
 
 if ch == 1:
