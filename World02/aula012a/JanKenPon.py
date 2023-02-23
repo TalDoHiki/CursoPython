@@ -1,5 +1,7 @@
 from random import choice
+from colorama import just_fix_windows_console
 from time import sleep
+just_fix_windows_console()
 colors = {
     'clear':'\033[m',
     'white':'\033[30m',
