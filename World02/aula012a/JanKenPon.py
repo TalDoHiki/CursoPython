@@ -56,6 +56,8 @@ while gt == True:
         print('{}Congratzz dude!! You won!!{}'.format(colors['green'],colors['clear']))
     elif hs == 'scissors' and pl == 'paper':
         print('{}Yep.. You lost, better luck next time..{}'.format(colors['red'],colors['clear']))
+    else:
+        print('{}[INVALID PICK]{}'.format(colors['red'],colors['clear']))
     sleep(2)
     print('{}-=-{}'.format(colors['yellow'], colors['clear'])*10)
     stg = False
@@ -68,3 +70,5 @@ while gt == True:
             print("Noice! Let's keep going then..")
         print('{}-=-{}'.format(colors['yellow'], colors['clear'])*10)
 print('[{}CREDITS{}: {}GitHub{}: {}@TalDoHiki{}]'.format(colors['green'], colors['clear'], colors['yellow'],colors['clear'],colors['red'],colors['clear']))
+print('exiting...')
+sleep(3)
