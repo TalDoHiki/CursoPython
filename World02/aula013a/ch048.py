@@ -1,5 +1,9 @@
-n = int(input('Type a number: '))
 s = 0
-for n in range(n,501+n):
-    s += n
-print('The sum between {} and {} is {}.'.format(n, n+500, s))
+cont = 0
+for c in range (1,501,2):
+    if c%3 == 0:
+        s += c
+        cont += 1
+print('''
+Number of numbers counted: {}
+Sum of them: {}.'''.format(cont, s))

@@ -13,3 +13,4 @@ if tot == 2 or n == 1:
     print("That's why he's a prime number")
 else:
     print("That's why he isn't a prime number")
+    

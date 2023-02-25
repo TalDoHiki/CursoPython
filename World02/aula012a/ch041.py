@@ -15,9 +15,6 @@ elif id <= 20:
 else:
     cl = 'Master'
 
-
-
-
 print('''
 Date of Birth: {}
 Athlete Age: {}

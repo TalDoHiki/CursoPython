@@ -8,3 +8,4 @@ elif n2 > n1:
     print('The second value is higher.')
 elif n1 == n2:
     print('Both of them have the same value.')
+    

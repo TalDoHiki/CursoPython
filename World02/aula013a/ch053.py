@@ -1,6 +1,6 @@
-phrase = str(input('Type a phrase: ')).lower().strip().replace(' ','')
-
-if phrase == phrase[::-1]:
-    print('Is a palindrome.')
+phrase = str(input('Type a phrase: ')).title().strip()
+print('Result: {}.'.format(phrase[::-1]))
+if phrase.lower().strip().replace(' ','') == phrase.lower().strip().replace(' ','')[::-1]:
+    print('{} is a palindrome.'.format(phrase))
 else:
-    print('Is not a palindrome.')
+    print('{} is not a palindrome.'.format(phrase))

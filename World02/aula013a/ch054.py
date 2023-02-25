@@ -3,7 +3,7 @@ from datetime import date
 map = 0
 mip = 0
 for c in range(1,8):
-    dt = int(input('Type the year of birth: '))
+    dt = int(input('Type the year of birth of the {} person: '.format(c)))
     if date.today().year - dt > 21:
         map += 1
     else:
