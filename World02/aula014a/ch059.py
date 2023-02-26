@@ -3,8 +3,8 @@ print('{:=^40}'.format(' Logic Calculator '))
 calc_s = True
 while calc_s == True:
     numb_st = True
-    n1 = float(input('Type the first number: '))
-    n2 = float(input('Type the second number: '))
+    n1 = int(input('Type the first number: '))
+    n2 = int(input('Type the second number: '))
     while numb_st == True:
         print('-=-'*15)
         print('''Here are the functions:
