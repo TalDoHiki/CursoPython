@@ -1,1 +1,1 @@
-Exercícios práticados no Curso de Python por Curso Em Vídeo
+Exercícios práticados no Curso de Python do Curso Em Vídeo
