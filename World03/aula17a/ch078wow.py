@@ -11,6 +11,6 @@ for n in range(len(list)):
 print(f'\nLower Value: {sorted(list)[0]} | Position: ',end='')
 c = 0
 for n in range(len(list)):
-    if list[n] == sorted(list)[0]:
+    if list[n] == sorted(list)[0]:  #Should use max() and min()
         print(c+1, end='.. ')
     c += 1

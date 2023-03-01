@@ -1,7 +1,10 @@
 list = []
 while True:
-    #Add a value and don't repeat
-
+    n = int(input('Type a value: '))
+    if n in list:
+        print('[ERROR] Value already in list.')
+    else:
+        list.append(n)
     ch = ''
     while ch != 'Y' and ch != 'N':
         ch = str(input('Continue? [Y/N] ')).upper().strip()[0]
