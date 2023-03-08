@@ -15,4 +15,7 @@ print('-=-'*15)
 ch = str(input('Specific data: [Y/N] ')).upper().strip().split()[0][0]
 if ch == 'Y' or ch == 'YES':
     print('{:=^30}'.format(' Specific Data '))
-    print(f'The ')
+    print(f'The player {player["Name"]} played {player["Match Count"]} match.')
+    for i in range(player['Match Count']):
+        print(f'=> In the match {i}, make {player["Goals"][i]} goals.')
+    print(f'Total of {player["Total goals count"]}')
