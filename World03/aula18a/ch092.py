@@ -1,17 +1,18 @@
-from datetime import date
+from datetime import datetime
 
 person = {}
 person['Name'] = str(input('Name: ')).title().strip()
-person['Age'] = date.today().year - int(input('Birth Year: '))
+person['Age'] = datetime.now().year - int(input('Birth Year: '))
 person['Work Card'] = int(input('Work Card: '))
-person['Contract'] = int(input('Year of contract: '))
-person['Salary:'] = float(input('Salary: R$'))
-print('-=-'*15)
 if person['Work Card'] == 0:
-    person.pop('Work Card','Salary')
+    print('-=-'*15)
     for k,v in person.items():
        print(f'{k}: {v}')
 else:
+    person['Contract'] = int(input('Year of contract: '))
+    person['Salary:'] = float(input('Salary: R$'))
+    print('-=-'*15)
+    person['Retariment'] = person['Age'] + ((person['Contract'] + 35) - datetime.now().year)
     for k,v in person.items():
         print(f'{k}: {v}')
-    print(f'Retirement: {date.today().year - person["Contract"]}')
+        

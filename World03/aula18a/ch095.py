@@ -5,14 +5,12 @@ print('{:=^40}'.format(' Football Player List '))
 while True:
     player['Name'] = str(input('Name: ')).title().strip()
     player['Match Count'] = int(input('Match played: '))
-    g_ct = 0
     if player['Match Count'] != 0:
         for m in range(player['Match Count']):
-            goals.append(int(input(f'Match {m} goals: ')))
-            g_ct += goals[-1]
+            goals.append(int(input(f'Match {m+1} goals: ')))
         player['Goals'] = goals.copy()
         goals.clear()
-        player['Total Goals'] = g_ct
+        player['Total Goals'] = sum(player['Goals'])
     else:
         player['Goals'] = [0]
         player['Total Goals'] = 0
@@ -22,14 +20,12 @@ while True:
     print('-'*20)
     if ch == 'N':
         break
-print(players)
-
-print('{:=^30}'.format(' Results '))
+print('{:=^60}'.format(' Results '))
 print('{:<3}'.format('ID'), '{:<15}'.format('Name'), '{:<15}'.format('Goals'), '{:<3}'.format('Total Goals'))
 print('-'*60)
 pll = []
 for pl in range(len(players)):
-    print(f'{pl:<3}',f'{players[pl]["Name"]:<15}',players[pl]["Goals"][:],'{:>8}'.format(''),f'{players[pl]["Total Goals"]:<3}')
+    print(f'{pl:<3}',f'{players[pl]["Name"]:<15}','{:<15}'.format('{}'.format(players[pl]["Goals"][:])),f'{players[pl]["Total Goals"]:<3}')
     pll.append(pl)
 print('-'*60)
 print(pll)
@@ -40,7 +36,8 @@ while True:
     elif chp in pll:
         print(f'-- PLAYER {players[chp]["Name"]} DATA:')
         for c in range(len(players[chp]['Goals'])):
-            print(f'In the game {c} make {players[chp]["Goals"][c]} goals.')
+            print(f'In the game {c+1} make {players[chp]["Goals"][c]} goals.')
     else:
         print(f'[ERROR] There is no player ID {chp}.')
     print('-'*45)
+print('<< PROCESS ENDED >>')

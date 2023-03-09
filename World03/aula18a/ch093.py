@@ -18,4 +18,4 @@ if ch == 'Y' or ch == 'YES':
     print(f'The player {player["Name"]} played {player["Match Count"]} match.')
     for i in range(player['Match Count']):
         print(f'=> In the match {i}, make {player["Goals"][i]} goals.')
-    print(f'Total of {player["Total goals count"]}')
+    print(f'Total of {player["Total goals count"]} goals.')
