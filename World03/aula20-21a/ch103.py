@@ -3,7 +3,7 @@ def sheet(name='',goals=''):
     if name == '':
         name = '<unknown>'
     print('--'*len(name)*2)
-    if goals == '':
+    if goals.isnumeric() == False:
         goals = 0
     print(f'Name: {name} | Goals: {goals}')
     print('--'*len(name)*2)

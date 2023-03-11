@@ -15,4 +15,5 @@ def fact(n=1,show=False):
             f *=c
             print(f'{c}', end=' X ')
         print(f'1 = {f}')
+fact(5,show=True)
 help(fact)

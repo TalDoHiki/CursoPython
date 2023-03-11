@@ -1,12 +1,11 @@
-from datetime import date
-def vote():
-    bd = int(input('Year of birth: '))
+def vote(bd):
+    from datetime import date
     age = date.today().year - bd
-    return age
-ag = vote()
-if ag < 16:
-    print('DENIED.')
-elif ag < 18 or ag >= 65:
-    print('OPTIONAL.')
-else:
-    print('OBRIGATORY.')
+    if age < 16:
+        return f'{age} years old. DENIED.'
+    elif age < 18 or age >= 65:
+        return f'{age} years old. OPTIONAL.'
+    else:
+        return f'{age} years old. OBRIGATORY.'
+brye = int(input('Year of birth: '))
+print(vote(brye))
